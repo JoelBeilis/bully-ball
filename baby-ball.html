@@ -89,10 +89,9 @@
 
     <script>
         function getAnswer() {
-            const presetAnswers = ['kill yourself now', 'You look like a great tragedy', '.', 'kms^-1', 'I hope you get shanked :pray:'];
-            const part1 = ['greedy', 'evil','ungreatful','nasty', 'pitiful', 'crusty', 'sneaky', 'bossy','greedy', 'sharp', 'childish', 'obnoxious', 'snapped', 'arrogant', 'round', 'impatient','awkward', 'jealous'];
-            const part2 = ['fuck', 'bullshit', 'retard', 'retarted', 'restarted', 'arse','bitch', 'ass', 'dipshit', 'shithead','twat','bitchy', 'goddamn', 'damn','buffoon', 'bloody', 'dimwitted','moron', 'asshat','moronic', 'shit', 'four-eyed', 'bimbo', 'blockhead', ];
-            const part3 = ['dog', 'cushion', 'fridge', 'shoe', 'calculator', 'book', 'potato', 'hippo', 'crocodile', 'neck', 'goblin','can', 'tv','towel'];
+            const presetAnswers = ['You are beautiful', 'You are one smart cookie', 'yippee', 'You are amazing :sparkles:', 'Your left side pinky toe is splendid'];
+            const part1 = ['amazing', 'quirky', 'awesome', 'brilliant', 'delightful', 'excellent', 'fabulous', 'fantastic', 'fine', 'first-class', 'good', 'gorgeous', 'great', 'interesting', 'impressive', 'lovely', 'marvelous', 'nice', 'outstanding', 'superb', 'smashing', 'splendid', 'stunning', 'terrific', 'tremendous', 'wonderful'];
+            const part2 = ['dog', 'cushion', 'fridge', 'shoe', 'calculator', 'book', 'potato', 'hippo', 'crocodile', 'neck', 'goblin','can', 'tv','towel', 'toe', 'watch', 'pen', 'animal balloon', 'seat belt', 'packing peanut', 'cup', 'driver', 'eraser', 'soap', 'door', 'house', 'carrot', 'radio'];
 
             const ball = document.querySelector('.ball');
             ball.classList.add('shake');
@@ -106,8 +105,7 @@
                 } else {
                     const randomPart1 = part1[Math.floor(Math.random() * part1.length)];
                     const randomPart2 = part2[Math.floor(Math.random() * part2.length)];
-                    const randomPart3 = part3[Math.floor(Math.random() * part3.length)];
-                    const combinedAnswer = `${randomPart1} ${randomPart2} ${randomPart3}.`;
+                    const combinedAnswer = `${randomPart1} ${randomPart2}.`;
                     document.querySelector('.answer').textContent = combinedAnswer;
                 }
                 ball.classList.remove('shake');
